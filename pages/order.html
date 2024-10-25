@@ -22,11 +22,11 @@
 
     <section class="home-page">
       <section class="hero-container">
-        <div class="hero-home order-container">
+        <div class="hero-home order-container" style="position: relative">
           <h1>We Got You!</h1>
           <fieldset>
             <legend>Order Here</legend>
-            <form style="position: relative">
+            <form>
               <label for="user-name">Your Name:</label>
               <input
                 type="text"
@@ -93,12 +93,12 @@
               />
 
               <button class="submit" type="submit">Place Order</button>
-              <div class="loader-container">
-                <div class="loader"></div>
-              </div>
             </form>
+            <div id="loaderContainer" class="loader-container">
+              <div class="loader"></div>
+            </div>
 
-            <div style="display: none" class="message">
+            <div id="message" class="message">
               <h1>በተሣካ ሁኔታ አዘዋል!</h1>
               <p class="orderID">Order ID: <span>483474748374</span></p>
               <h1>Thankyou for choosing Us!</h1>

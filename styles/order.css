@@ -276,6 +276,7 @@ button:hover {
   text-align: center;
   margin-top: 20px;
   color: #333;
+  display: none;
 }
 
 .message h1 {
@@ -306,17 +307,16 @@ button:hover {
   color: #ff6347;
 }
 
-
-
 .loader-container {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: none;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .loader {
-  color: #000000;
+  color: rgb(255, 0, 242);
   font-size: 45px;
   text-indent: -9999em;
   overflow: hidden;

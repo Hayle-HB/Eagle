@@ -1,15 +1,24 @@
-// Get the current page URL
-const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+// Get references to the elements
+const form = document.querySelector("form");
+const loaderContainer = document.getElementById("loaderContainer");
+const message = document.getElementById("message");
 
-// Get all navigation links
-const navLinks = document.querySelectorAll(".navlist a");
+// Handle form submission
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
 
-// Loop through each link and check for active page
-navLinks.forEach((link) => {
-  const linkPage = link.getAttribute("href").split("/").pop().toLowerCase();
+  // Show the loader and change form opacity
+  loaderContainer.style.display = "block"; // Show the loader
+  form.style.opacity = "0.2"; // Set form opacity to 0.5
+  loaderContainer.style.opacity = "1"; // Set loader opacity to 1
 
-  // Check if the link's href matches the current page and apply 'active' class
-  if (linkPage === currentPage) {
-    link.classList.add("active");
-  }
+  // Simulate loading time
+  setTimeout(() => {
+    // Hide the loader
+    loaderContainer.style.display = "none";
+
+    // Show the success message and reset form opacity
+    form.style.display = "none"; // Hide the form
+    message.style.display = "block"; // Show the message
+  }, 5000); // 5000 ms = 5 seconds
 });
