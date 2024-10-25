@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/order.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/logo.png" alt="Eagle Logo" />
+        <h6>Eagle Delivery</h6>
+      </div>
+
+      <ul class="navlist">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./order.html">Order now</a></li>
+      </ul>
+    </header>
+
+    <section class="home-page">
+      <section class="hero-container">
+        <div class="hero-home order-container">
+          <h1>We Got You!</h1>
+          <fieldset>
+            <legend>Order Here</legend>
+            <form style="position: relative">
+              <label for="user-name">Your Name:</label>
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Enter your name"
+              />
+
+              <label for="product-name"
+                >Product Name: <br />
+                e.g., ከ እሙ ጋር ሽሮ</label
+              >
+              <input
+                type="text"
+                id="product-name"
+                name="product-name"
+                placeholder="Enter product name"
+                required
+              />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                placeholder="Enter quantity"
+                required
+              />
+
+              <label for="phone-number">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                placeholder="Enter phone number"
+                required
+              />
+
+              <label for="block">Block:</label>
+              <input
+                type="text"
+                id="block"
+                name="block"
+                placeholder="Enter block"
+                required
+              />
+
+              <label for="room">Room:</label>
+              <input
+                type="text"
+                id="room"
+                name="room"
+                placeholder="Enter room number"
+                required
+              />
+
+              <label for="time">For what time:</label>
+              <input
+                class="time"
+                type="text"
+                placeholder="Enter delivery time"
+                required
+              />
+
+              <button class="submit" type="submit">Place Order</button>
+              <div class="loader-container">
+                <div class="loader"></div>
+              </div>
+            </form>
+
+            <div style="display: none" class="message">
+              <h1>በተሣካ ሁኔታ አዘዋል!</h1>
+              <p class="orderID">Order ID: <span>483474748374</span></p>
+              <h1>Thankyou for choosing Us!</h1>
+              <h2>We will be reach you</h2>
+              <h3>at: <span>4:00</span></h3>
+              <p>delivery fee: <span>10ETB</span> per item</p>
+              <button class="cancel">ተዕዛዝዎን ይሠርዙ</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="hero-image">
+          <img src="../assets/logo.png" alt="Eagle Delivery Service" />
+        </div>
+      </section>
+
+      <div class="client">
+        <h1>Our Satisfied Customers</h1>
+      </div>
+
+      <div class="Testimonial-wrapper">
+        <div class="Testimonial-card">
+          <div class="profile-image">
+            <img src="../assets/hayle.jpg" alt="Client Testimonial" />
+          </div>
+          <h4>GlobalMart</h4>
+          <div class="single-review">
+            <p>
+              Eagle has streamlined our logistics, making deliveries faster and
+              more reliable than ever.
+            </p>
+          </div>
+        </div>
+
+        <div class="Testimonial-card">
+          <div class="profile-image">
+            <img src="../assets/hayle.jpg" alt="Client Testimonial" />
+          </div>
+          <h4>ExpressHub</h4>
+          <div class="single-review">
+            <p>
+              Reliable, quick, and efficient—Eagle has been a game-changer for
+              our delivery needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="Testimonial-card">
+          <div class="profile-image">
+            <img src="../assets/hayle1.jpg" alt="Client Testimonial" />
+          </div>
+          <h4>Urban Essentials</h4>
+          <div class="single-review">
+            <p>
+              From small packages to large shipments, Eagle handles it all with
+              precision and care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="ftr-main">
+        <div class="ftr-items contact-info">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <a href="tel:+251912345678"
+                ><i class="fa fa-phone"></i> +251 91 234 5678</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-map-marker"></i> Addis Ababa, Akaki Kality,
+                Cabey Building, 3rd Floor, Room 304</a
+              >
+            </li>
+            <li>
+              <a href="mailto:eagle.sales@gmail.com"
+                ><i class="fa fa-envelope"></i> eagle.sales@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="ftr-items links">
+          <ul>
+            <li class="order-now"><a href="#">Order Now</a></li>
+          </ul>
+        </div>
+        <div class="ftr-items social-media">
+          <h2>Follow Us</h2>
+          <ul class="ftr-list">
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="footer-bottom">
+        <p>&copy;2024 Eagle Delivery and Sales. All rights reserved.</p>
+        <p>
+          Developed By
+          <a href="https://t.me/Hayle_HB">Haylemeskel Haylemariam</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
