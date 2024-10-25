@@ -9,7 +9,7 @@ form.addEventListener("submit", function (event) {
 
   // Show the loader and change form opacity
   loaderContainer.style.display = "block"; // Show the loader
-  form.style.opacity = "0.2"; // Set form opacity to 0.5
+  form.style.opacity = "0.35"; // Set form opacity to 0.5
   loaderContainer.style.opacity = "1"; // Set loader opacity to 1
 
   // Simulate loading time
